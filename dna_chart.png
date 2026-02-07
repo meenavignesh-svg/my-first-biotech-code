@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+
+# 1. Our DNA Data
+dna = "ATGCGATCGTAGCTAGCTAGCTAGCTAGCGGGTTTAAA"
+
+# 2. Count each letter
+counts = {
+    'Adenine': dna.count('A'),
+    'Thymine': dna.count('T'),
+    'Guanine': dna.count('G'),
+    'Cytosine': dna.count('C')
+}
+
+# 3. Create the Graph
+names = list(counts.keys())
+values = list(counts.values())
+
+plt.bar(names, values, color=['blue', 'red', 'green', 'orange'])
+
+# 4. Add Labels (The Science part)
+plt.title("Nucleotide Distribution in Sample DNA")
+plt.xlabel("Nucleotide Type")
+plt.ylabel("Frequency (Count)")
+
+# 5. Save the image
+plt.savefig("results/dna_chart.png")
+print("Graph saved in results/dna_chart.png!")
