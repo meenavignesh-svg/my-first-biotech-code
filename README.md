@@ -13,7 +13,7 @@ File Parsing: The script reads raw .txt genomic data.
 Pattern Matching: Used to identify specific motifs within a sequence.
 
 Metrics: Calculates GC content to evaluate genomic stability.
-[DNA Analysis Chart](results/dna_chart.png)
+![DNA Analysis Chart](results/dna_chart.png)
 📊 Analysis Results
 Based on the generated distribution:
 
